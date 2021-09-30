@@ -8,8 +8,8 @@ import seaborn as sns
 
 class Regression:
 
-    def __init__(self, kind, X_train, X_test, y_train, y_test, df):
-        self.kind = kind
+    def __init__(self, X_train, X_test, y_train, y_test, df):
+
         self.X_train = X_train
         self.X_test = X_test
         self.y_train = y_train
@@ -111,6 +111,5 @@ class Regression:
         print(res)
 
 
-rr = Regression(2, X_train, X_test, y_train, y_test, df3)
-rr.run_regression()
+
 
